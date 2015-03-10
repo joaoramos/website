@@ -1,10 +1,24 @@
 /*global -$ */
 'use strict';
 // generated on 2015-03-08 using generator-gulp-webapp 0.3.0
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
+var gulp        = require('gulp');
+var $           = require('gulp-load-plugins')();
+var svgSprite   = require('gulp-svg-sprite');
 var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+var reload      = browserSync.reload;
+
+var config = {
+  dest: 'app/images',
+  mode: {
+    symbol: true
+  }
+}
+
+gulp.task('svgSprite', function() {
+  return gulp.src('app/images/*.svg')
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest('app/images'));
+});
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
@@ -117,7 +131,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'svgSprite', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

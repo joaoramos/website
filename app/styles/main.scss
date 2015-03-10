@@ -3,9 +3,9 @@
 
 @import "bourbon/bourbon";
 
-/*
-  Animation
- */
+//-------------------------------------
+// Animation
+//-------------------------------------
 
 @include keyframes(slideDown) {
   0% { opacity: 0; @include transform(translate3d(0,-5px,0)); }
@@ -17,12 +17,13 @@
   100% { opacity: 1; @include transform(translateY(0px)); }
 }
 
-/*
-  Variables
- */
+//-------------------------------------
+// Variables
+//-------------------------------------
 
 $colorDarkGrey:     #222;
-$colorLightGrey:    #666;
+$colorLightGrey:    #888;
+$colorSumupBlue:    #00a5df;
 
 * { @include box-sizing(border-box) }
 
@@ -35,7 +36,6 @@ body {
 
 body {
   font-family: "fira-sans", Arial, sans-serif;
-  // font-family: "ff-tisa-sans-web-pro", Arial, sans-serif;
   color: $colorDarkGrey;
 }
 
@@ -44,7 +44,7 @@ body > svg { display: none }
 .wrapper {
   @include transform(translateY(-50%));
   position: relative;
-  top: 50%;
+  top: 45%;
   max-width: 680px;
   padding: 0 3em;
   margin: 0 auto;
@@ -58,8 +58,8 @@ body > svg { display: none }
 .picture {
   opacity: 0;
   @include animation(slideDown .5s cubic-bezier(.4,.0,.2,1) forwards);
-  width: 140px;
-  margin: 0 auto 2em;
+  width: 160px;
+  margin: 0 auto 2.5em;
 
   img {
     -webkit-filter: grayscale(90%);
@@ -87,14 +87,35 @@ body > svg { display: none }
     font-weight: 100;
   }
 
-  small {}
+  a {
+    @include transition(color .3s cubic-bezier(.4,.0,.2,1));
+    color: darken($colorSumupBlue, 10%);
+    text-decoration: none;
 
-  a { text-decoration: none }
+    &:hover,
+    &:focus,
+    &:active {
+      @include transition(color .3s cubic-bezier(.4,.0,.2,1));
+      color: $colorSumupBlue;
+    }
+  }
 
   .social {
+    margin-top: 2.5em;
     padding: 0;
     list-style: none;
 
     li { display: inline-block }
+
+    a {
+      padding: 1em;
+      display: block;
+    }
+
+    svg {
+      @include size(32px);
+      fill: $colorLightGrey;
+      display: block;
+    }
   }
 }
