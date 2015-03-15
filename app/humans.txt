@@ -1,0 +1,12 @@
+/* ME */
+Designer and developer: João Ramos
+Joao.pt: hello (at) joao (dot) pt
+Twitter: joaotiago
+Location: Berlin, Germany
+
+/* SITE */
+Last update: March, 2015
+Standards: HTML5, CSS3, SVG
+Components: Normalizr, SASS, Bourbon
+Software: Gulp, Node.js, Bower
+IDE: Sublime Text 3
