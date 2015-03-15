@@ -12,5 +12,6 @@ window.onload = function() {
 	console.log('Good to see you here. Why don\'t you have a look at ' + randomProject + '?');
 
 	// Smooth reveal transitions
+	var scrollReveal;
 	window.sr = new scrollReveal({ scale: { power:'0%'} });
 };
