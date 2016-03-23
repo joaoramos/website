@@ -4,6 +4,5 @@ This is a simple static page. Either fire up `index.html` on your browser or ser
 
 ### Run
 * Get SASS, `gem install sass -g`
-* Get svg-sprite, `npm install svg-sprite -g`
-* Set file permissions for tasks, `chmod +x watch.sh` and `chmod +x svg-sprite`
-* Watch with `./watch` and generate sprites with `./sprite`
+* Set file permissions for task, `chmod +x watch.sh`
+* Watch with `./watch`
