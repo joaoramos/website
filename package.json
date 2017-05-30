@@ -1,0 +1,24 @@
+{
+  "name": "joaoramos.github.io",
+  "version": "1.0.0",
+  "description": "This is a simple static page. Either fire up `index.html` on your browser or serve it locally using your favorite local tiny hipster web server.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://joaoramos@github.com/joaoramos/joaoramos.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaoramos/joaoramos.github.io/issues"
+  },
+  "homepage": "https://github.com/joaoramos/joaoramos.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
