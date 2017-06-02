@@ -31,13 +31,6 @@ body {
   }
 }
 
-* {
-  // transition-property: margin, padding, transform;
-  // transition-duration: .2s;
-  // transition-delay: .2s, .4s, .6s;
-  // transition-timing-function: linear;
-}
-
 /* Typography */
 
 h1,
@@ -63,17 +56,13 @@ main {
   max-width: $main-max-width;
   margin: $whitespace-vw-small;
   padding: 0;
-}
 
-@media all and (min-width: 650px) {
-  main {
+  @media all and (min-width: 650px) {
     margin: $whitespace-vw-small;
     padding: 0 $whitespace-vw-small;
   }
-}
 
-@media all and (min-width: 1200px) {
-  main {
+  @media all and (min-width: 1200px) {
     margin: $whitespace-vw-small auto;
     padding: 0 $whitespace-em-small;
   }
@@ -83,11 +72,8 @@ main {
 
 .wrapper {
   padding: $whitespace-vw-medium;
-}
 
-@media all and (min-width: 1200px) {
-  .wrapper {
-    // padding: $whitespace-em-tiny;
+  @media all and (min-width: 1200px) {
     padding: $whitespace-em-small;
   }
 }
@@ -105,10 +91,8 @@ nav {
   overflow: hidden;
   margin-bottom: $whitespace-vw-small;
   color: $color-grey-dark;
-}
 
-@media all and (min-width: 650px) {
-  nav {
+  @media all and (min-width: 650px) {
     margin: $whitespace-em-small 0 ($whitespace-vw-small / 2);
   }
 }

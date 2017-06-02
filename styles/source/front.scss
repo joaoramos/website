@@ -1,12 +1,17 @@
 /* Top header */
 
 header.top {
-  background: $color-orange;
+  // background: url('/images/profile-mobile.png') right bottom no-repeat $color-orange;
+  // background-size: 45%;
+  background: url('/images/profile-duo.jpg') center no-repeat $color-orange;
+  background-size: cover;
   color: $color-white;
-}
 
-@media all and (min-width: 1200px) {
-  header.top {
+  @media all and (min-width: 650px) {
+    background: $color-orange;
+  }
+
+  @media all and (min-width: 1200px) {
     margin: 0 $whitespace-em-medium -2.5em;
     transform: translateY(-2.5em);
   }
@@ -17,8 +22,11 @@ header.top {
   }
 
   .title {
-    width: 70%;
     font-size: 150%;
+
+    @media all and (min-width: 650px) {
+      max-width: 11em;
+    }
 
     @media all and (min-width: 1200px) {
       font-size: 165%;
@@ -26,29 +34,21 @@ header.top {
   }
 
   .photo {
+    display: none;
     position: absolute;
-    // width: calc(30% + #{$whitespace-vw-small});
     width: 30%;
     max-width: 5em;
     top: 0;
-    // right: -12.5vw;
     right: -$whitespace-vw-medium;
-  }
 
-  @media all and (min-width: 650px) {
-    .title {
-      max-width: 11em;
-    }
-
-    .photo {
+    @media all and (min-width: 650px) {
+      display: block;
       width: calc(40% + #{$whitespace-vw-small});
       max-width: 100%;
       right: -($whitespace-vw-small * 2);
     }
-  }
 
-  @media all and (min-width: 1200px) {
-    .photo {
+    @media all and (min-width: 1200px) {
       width: calc(40% + #{$whitespace-vw-small * 2});
       right: -($whitespace-em-small + $whitespace-em-medium);
     }
@@ -57,16 +57,11 @@ header.top {
 /* Bio section */
 
 section.bio {
-}
-
-@media all and (min-width: 650px) {
-  section.bio {
+  @media all and (min-width: 650px) {
     width: 50vw;
   }
-}
 
-@media all and (min-width: 1200px) {
-  section.bio {
+  @media all and (min-width: 1200px) {
     width: 32.5em;
     margin: 0 ($whitespace-em-medium - $whitespace-em-small)  0;
   }
@@ -77,18 +72,17 @@ section.bio {
 section.practice {
   background: $color-grey-darker;
   color: $color-white;
-}
 
-@media all and (min-width: 1200px) {
-  section.practice {
+  @media all and (min-width: 1200px) {
     padding: $whitespace-em-medium;
   }
 }
 
   .practice h2 {
-    font-size: 275%;
+    font-size: 175%;
 
     @media all and (min-width: 1200px) {
+      font-size: 275%;
       padding-left: $whitespace-em-small;
     }
   }
@@ -101,54 +95,46 @@ section.practice {
   .practice .copy {
     overflow: hidden;
 
-    p:first-child {
-      margin-bottom: 1em;
-    }
-  }
+    p {
+      &:first-child { margin-bottom: 1em }
 
-  @media all and (min-width: 650px) {
-    .practice .copy p {
-      float: left;
-      width: 50%;
-      padding-right: ($whitespace-em-small / 2);
+      @media all and (min-width: 650px) {
+        width: 50%;
+        float: left;
+        padding-right: ($whitespace-em-small / 2);
+      }
     }
   }
 
 /* Experience section */
 
 section.experience {
-
+  @media all and (min-width: 1200px) {
+    margin: 0 $whitespace-em-medium 0;
+  }
 }
 
-@media all and (min-width: 1200px) {
-  section.experience {
-    margin: 0 $whitespace-em-medium 0;
+.currently,
+.before {
+  @media all and (min-width: 650px) {
+    display: inline-block;
+    width: 50%;
   }
 }
 
   .currently {
     background: $color-grey-light;
+
+    @media all and (min-width: 650px) {
+      float: left;
+    }
+
+    @media all and (min-width: 1200px) {
+      transform: translateY(-2.5em);
+    }
   }
 
   .before {
-  }
-
-  @media all and (min-width: 650px) {
-    .currently,
-    .before {
-      display: inline-block;
-      width: 50%;
-    }
-
-    .currently {
-      float: left;
-    }
-  }
-
-  @media all and (min-width: 1200px) {
-    .currently {
-      transform: translateY(-2.5em);
-    }
   }
 
 /* Bottom footer */
@@ -156,10 +142,8 @@ section.experience {
 footer.bottom {
   background: $color-petrol;
   color: $color-white;
-}
 
-@media all and (min-width: 1200px) {
-  footer.bottom {
+  @media all and (min-width: 1200px) {
     transform: translateY(2.5em);
   }
 }

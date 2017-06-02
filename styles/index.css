@@ -103,24 +103,21 @@ main {
   max-width: 1200px;
   margin: 5vw;
   padding: 0; }
-
-@media all and (min-width: 650px) {
-  main {
-    margin: 5vw;
-    padding: 0 5vw; } }
-
-@media all and (min-width: 1200px) {
-  main {
-    margin: 5vw auto;
-    padding: 0 5rem; } }
+  @media all and (min-width: 650px) {
+    main {
+      margin: 5vw;
+      padding: 0 5vw; } }
+  @media all and (min-width: 1200px) {
+    main {
+      margin: 5vw auto;
+      padding: 0 5rem; } }
 
 /* Container wrapper */
 .wrapper {
   padding: 7.5vw; }
-
-@media all and (min-width: 1200px) {
-  .wrapper {
-    padding: 5rem; } }
+  @media all and (min-width: 1200px) {
+    .wrapper {
+      padding: 5rem; } }
 
 /* Navigation */
 nav,
@@ -133,10 +130,9 @@ nav {
   overflow: hidden;
   margin-bottom: 5vw;
   color: #373737; }
-
-@media all and (min-width: 650px) {
-  nav {
-    margin: 5rem 0 2.5vw; } }
+  @media all and (min-width: 650px) {
+    nav {
+      margin: 5rem 0 2.5vw; } }
 
 nav .given-name {
   float: left; }
@@ -155,43 +151,46 @@ nav a {
 
 /* Top header */
 header.top {
-  background: #F15A24;
+  background: url("/images/profile-duo.jpg") center no-repeat #F15A24;
+  background-size: cover;
   color: #FFFFFF; }
-
-@media all and (min-width: 1200px) {
-  header.top {
-    margin: 0 7.5rem -2.5em;
-    transform: translateY(-2.5em); } }
+  @media all and (min-width: 650px) {
+    header.top {
+      background: #F15A24; } }
+  @media all and (min-width: 1200px) {
+    header.top {
+      margin: 0 7.5rem -2.5em;
+      transform: translateY(-2.5em); } }
 
 .about {
   position: relative; }
 
 .title {
-  width: 70%;
   font-size: 150%; }
+  @media all and (min-width: 650px) {
+    .title {
+      max-width: 11em; } }
   @media all and (min-width: 1200px) {
     .title {
       font-size: 165%; } }
 
 .photo {
+  display: none;
   position: absolute;
   width: 30%;
   max-width: 5em;
   top: 0;
   right: -7.5vw; }
-
-@media all and (min-width: 650px) {
-  .title {
-    max-width: 11em; }
-  .photo {
-    width: calc(40% + 5vw);
-    max-width: 100%;
-    right: -10vw; } }
-
-@media all and (min-width: 1200px) {
-  .photo {
-    width: calc(40% + 10vw);
-    right: -12.5rem; } }
+  @media all and (min-width: 650px) {
+    .photo {
+      display: block;
+      width: calc(40% + 5vw);
+      max-width: 100%;
+      right: -10vw; } }
+  @media all and (min-width: 1200px) {
+    .photo {
+      width: calc(40% + 10vw);
+      right: -12.5rem; } }
 
 /* Bio section */
 @media all and (min-width: 650px) {
@@ -207,15 +206,15 @@ header.top {
 section.practice {
   background: #282725;
   color: #FFFFFF; }
-
-@media all and (min-width: 1200px) {
-  section.practice {
-    padding: 7.5rem; } }
+  @media all and (min-width: 1200px) {
+    section.practice {
+      padding: 7.5rem; } }
 
 .practice h2 {
-  font-size: 275%; }
+  font-size: 175%; }
   @media all and (min-width: 1200px) {
     .practice h2 {
+      font-size: 275%;
       padding-left: 5rem; } }
 
 .practice h3 {
@@ -226,38 +225,36 @@ section.practice {
   overflow: hidden; }
   .practice .copy p:first-child {
     margin-bottom: 1em; }
-
-@media all and (min-width: 650px) {
-  .practice .copy p {
-    float: left;
-    width: 50%;
-    padding-right: 2.5rem; } }
+  @media all and (min-width: 650px) {
+    .practice .copy p {
+      width: 50%;
+      float: left;
+      padding-right: 2.5rem; } }
 
 /* Experience section */
 @media all and (min-width: 1200px) {
   section.experience {
     margin: 0 7.5rem 0; } }
 
-.currently {
-  background: #E6E6E3; }
-
 @media all and (min-width: 650px) {
   .currently,
   .before {
     display: inline-block;
-    width: 50%; }
-  .currently {
-    float: left; } }
+    width: 50%; } }
 
-@media all and (min-width: 1200px) {
-  .currently {
-    transform: translateY(-2.5em); } }
+.currently {
+  background: #E6E6E3; }
+  @media all and (min-width: 650px) {
+    .currently {
+      float: left; } }
+  @media all and (min-width: 1200px) {
+    .currently {
+      transform: translateY(-2.5em); } }
 
 /* Bottom footer */
 footer.bottom {
   background: #3B4E5B;
   color: #FFFFFF; }
-
-@media all and (min-width: 1200px) {
-  footer.bottom {
-    transform: translateY(2.5em); } }
+  @media all and (min-width: 1200px) {
+    footer.bottom {
+      transform: translateY(2.5em); } }
