@@ -57,7 +57,7 @@ header.top {
 /* Bio section */
 
 section.bio {
-  @media all and (min-width: 650px) {
+  @media all and (min-width: 1000px) {
     width: 50vw;
   }
 
@@ -79,17 +79,25 @@ section.practice {
 }
 
   .practice h2 {
-    font-size: 175%;
+    font-size: 215%;
 
     @media all and (min-width: 1200px) {
-      font-size: 275%;
-      padding-left: $whitespace-em-small;
+      font-size: 300%;
+      padding: 0 $whitespace-em-small ($whitespace-em-small / 2);
     }
   }
 
   .practice h3 {
     color: #7B7E81;
     margin: 1em 0;
+
+    @media all and (min-width: 1200px) {
+      font-size: 80%;
+      text-align: right;
+      margin: 0;
+      width: 20%;
+      float: left;
+    }
   }
 
   .practice .copy {
@@ -101,7 +109,11 @@ section.practice {
       @media all and (min-width: 650px) {
         width: 50%;
         float: left;
-        padding-right: ($whitespace-em-small / 2);
+        padding-left: ($whitespace-em-small / 2);
+      }
+
+      @media all and (min-width: 1200px) {
+        width: 40%;
       }
     }
   }

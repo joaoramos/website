@@ -124,7 +124,7 @@ nav,
 small {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  font-size: 70%; }
+  font-size: 80%; }
 
 nav {
   overflow: hidden;
@@ -193,7 +193,7 @@ header.top {
       right: -12.5rem; } }
 
 /* Bio section */
-@media all and (min-width: 650px) {
+@media all and (min-width: 1000px) {
   section.bio {
     width: 50vw; } }
 
@@ -211,15 +211,22 @@ section.practice {
       padding: 7.5rem; } }
 
 .practice h2 {
-  font-size: 175%; }
+  font-size: 215%; }
   @media all and (min-width: 1200px) {
     .practice h2 {
-      font-size: 275%;
-      padding-left: 5rem; } }
+      font-size: 300%;
+      padding: 0 5rem 2.5rem; } }
 
 .practice h3 {
   color: #7B7E81;
   margin: 1em 0; }
+  @media all and (min-width: 1200px) {
+    .practice h3 {
+      font-size: 80%;
+      text-align: right;
+      margin: 0;
+      width: 20%;
+      float: left; } }
 
 .practice .copy {
   overflow: hidden; }
@@ -229,7 +236,10 @@ section.practice {
     .practice .copy p {
       width: 50%;
       float: left;
-      padding-right: 2.5rem; } }
+      padding-left: 2.5rem; } }
+  @media all and (min-width: 1200px) {
+    .practice .copy p {
+      width: 40%; } }
 
 /* Experience section */
 @media all and (min-width: 1200px) {
