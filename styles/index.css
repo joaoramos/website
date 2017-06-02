@@ -236,10 +236,11 @@ section.practice {
     .practice .copy p {
       width: 50%;
       float: left;
-      padding-left: 2.5rem; } }
+      padding: 0 2.5rem 0 0; } }
   @media all and (min-width: 1200px) {
     .practice .copy p {
-      width: 40%; } }
+      width: 40%;
+      padding: 0 0 0 2.5rem; } }
 
 /* Experience section */
 @media all and (min-width: 1200px) {

@@ -109,11 +109,12 @@ section.practice {
       @media all and (min-width: 650px) {
         width: 50%;
         float: left;
-        padding-left: ($whitespace-em-small / 2);
+        padding: 0 ($whitespace-em-small / 2) 0 0;
       }
 
       @media all and (min-width: 1200px) {
         width: 40%;
+        padding: 0 0 0 ($whitespace-em-small / 2);
       }
     }
   }
