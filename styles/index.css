@@ -76,15 +76,12 @@ th {
 body {
   background: #F5F5F5;
   font-family: 'Noticia Text', serif;
-  font-size: calc(16px + (18 - 16) * ((100vw - 420px) / (1200 - 420)));
+  font-size: calc(16px + (19 - 16) * ((100vw - 420px) / (1200 - 420)));
   line-height: 1.68;
   color: #373737; }
-
-* {
-  transition-property: margin, padding, transform;
-  transition-duration: .2s;
-  transition-delay: .2s, .4s, .6s;
-  transition-timing-function: linear; }
+  @media all and (min-width: 1200px) {
+    body {
+      font-size: 18px; } }
 
 /* Typography */
 h1,
@@ -107,7 +104,7 @@ main {
   margin: 5vw;
   padding: 0; }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 650px) {
   main {
     margin: 5vw;
     padding: 0 5vw; } }
@@ -115,15 +112,15 @@ main {
 @media all and (min-width: 1200px) {
   main {
     margin: 5vw auto;
-    padding: 0 5em; } }
+    padding: 0 5rem; } }
 
 /* Container wrapper */
 .wrapper {
-  padding: 5vw; }
+  padding: 7.5vw; }
 
 @media all and (min-width: 1200px) {
   .wrapper {
-    padding: 3.5em; } }
+    padding: 5rem; } }
 
 /* Navigation */
 nav,
@@ -137,9 +134,9 @@ nav {
   margin-bottom: 5vw;
   color: #373737; }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 650px) {
   nav {
-    margin: 5em 0 2.5vw; } }
+    margin: 5rem 0 2.5vw; } }
 
 nav .given-name {
   float: left; }
@@ -163,42 +160,48 @@ header.top {
 
 @media all and (min-width: 1200px) {
   header.top {
-    margin: 0 7.5vw -2.5em;
+    margin: 0 7.5rem -2.5em;
     transform: translateY(-2.5em); } }
 
 .about {
   position: relative; }
 
 .title {
-  width: 75%;
-  font-size: 175%; }
+  width: 70%;
+  font-size: 150%; }
+  @media all and (min-width: 1200px) {
+    .title {
+      font-size: 165%; } }
 
 .photo {
   position: absolute;
-  width: calc(30% + 5vw);
-  right: -12.5vw;
-  top: 0; }
+  width: 30%;
+  max-width: 5em;
+  top: 0;
+  right: -7.5vw; }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 650px) {
   .title {
-    width: 50%; }
+    max-width: 11em; }
   .photo {
-    width: calc(40% + 5vw); } }
+    width: calc(40% + 5vw);
+    max-width: 100%;
+    right: -10vw; } }
 
 @media all and (min-width: 1200px) {
   .photo {
-    width: calc(40% + 5em);
-    right: -7.5em; } }
+    width: calc(40% + 10vw);
+    right: -12.5rem; } }
 
 /* Bio section */
-@media all and (min-width: 800px) {
+@media all and (min-width: 650px) {
   section.bio {
-    width: 65%; } }
+    width: 50vw; } }
 
 @media all and (min-width: 1200px) {
   section.bio {
-    width: 55%;
-    margin: 0 2.5em 0; } }
+    width: 32.5em;
+    margin: 0 2.5rem 0; } }
 
 /* Practice section */
 section.practice {
@@ -207,35 +210,48 @@ section.practice {
 
 @media all and (min-width: 1200px) {
   section.practice {
-    padding: inherit 7.5em; } }
+    padding: 7.5rem; } }
 
 .practice h2 {
-  font-size: 225%; }
+  font-size: 275%; }
+  @media all and (min-width: 1200px) {
+    .practice h2 {
+      padding-left: 5rem; } }
 
 .practice h3 {
-  color: #7B7E81; }
+  color: #7B7E81;
+  margin: 1em 0; }
 
 .practice .copy {
   overflow: hidden; }
+  .practice .copy p:first-child {
+    margin-bottom: 1em; }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 650px) {
   .practice .copy p {
     float: left;
     width: 50%;
-    padding-right: 2.5em; } }
+    padding-right: 2.5rem; } }
 
 /* Experience section */
-section.experience {
-  overflow: hidden; }
+@media all and (min-width: 1200px) {
+  section.experience {
+    margin: 0 7.5rem 0; } }
 
 .currently {
   background: #E6E6E3; }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 650px) {
   .currently,
   .before {
-    float: left;
-    width: 50%; } }
+    display: inline-block;
+    width: 50%; }
+  .currently {
+    float: left; } }
+
+@media all and (min-width: 1200px) {
+  .currently {
+    transform: translateY(-2.5em); } }
 
 /* Bottom footer */
 footer.bottom {

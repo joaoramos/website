@@ -13,25 +13,29 @@ $color-petrol:                  #3B4E5B;
 $main-max-width:                1200px;
 $whitespace-vw-small:           5vw;
 $whitespace-vw-medium:          7.5vw;
-$whitespace-em-tiny:            3.5em;
-$whitespace-em-small:           5em;
-$whitespace-em-medium:          7.5em;
+$whitespace-em-tiny:            3.5rem;
+$whitespace-em-small:           5rem;
+$whitespace-em-medium:          7.5rem;
 
 /* Basics */
 
 body {
   background: $color-grey-lighter;
   font-family: 'Noticia Text', serif;
-  font-size: calc(16px + (18 - 16) * ((100vw - 420px) / (1200 - 420)));
+  font-size: calc(16px + (19 - 16) * ((100vw - 420px) / (1200 - 420)));
   line-height: 1.68;
   color: $color-grey-dark;
+
+  @media all and (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
 
 * {
-  transition-property: margin, padding, transform;
-  transition-duration: .2s;
-  transition-delay: .2s, .4s, .6s;
-  transition-timing-function: linear;
+  // transition-property: margin, padding, transform;
+  // transition-duration: .2s;
+  // transition-delay: .2s, .4s, .6s;
+  // transition-timing-function: linear;
 }
 
 /* Typography */
@@ -61,7 +65,7 @@ main {
   padding: 0;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 650px) {
   main {
     margin: $whitespace-vw-small;
     padding: 0 $whitespace-vw-small;
@@ -78,12 +82,13 @@ main {
 /* Container wrapper */
 
 .wrapper {
-  padding: $whitespace-vw-small;
+  padding: $whitespace-vw-medium;
 }
 
 @media all and (min-width: 1200px) {
   .wrapper {
-    padding: $whitespace-em-tiny;
+    // padding: $whitespace-em-tiny;
+    padding: $whitespace-em-small;
   }
 }
 
@@ -102,7 +107,7 @@ nav {
   color: $color-grey-dark;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 650px) {
   nav {
     margin: $whitespace-em-small 0 ($whitespace-vw-small / 2);
   }

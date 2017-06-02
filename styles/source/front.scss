@@ -7,7 +7,7 @@ header.top {
 
 @media all and (min-width: 1200px) {
   header.top {
-    margin: 0 $whitespace-vw-medium -2.5em;
+    margin: 0 $whitespace-em-medium -2.5em;
     transform: translateY(-2.5em);
   }
 }
@@ -17,32 +17,40 @@ header.top {
   }
 
   .title {
-    width: 75%;
-    font-size: 175%;
+    width: 70%;
+    font-size: 150%;
+
+    @media all and (min-width: 1200px) {
+      font-size: 165%;
+    }
   }
 
   .photo {
     position: absolute;
-    width: calc(30% + #{$whitespace-vw-small});
-    right: -12.5vw;
+    // width: calc(30% + #{$whitespace-vw-small});
+    width: 30%;
+    max-width: 5em;
     top: 0;
+    // right: -12.5vw;
+    right: -$whitespace-vw-medium;
   }
 
-  @media all and (min-width: 800px) {
-
+  @media all and (min-width: 650px) {
     .title {
-      width: 50%;
+      max-width: 11em;
     }
 
     .photo {
       width: calc(40% + #{$whitespace-vw-small});
+      max-width: 100%;
+      right: -($whitespace-vw-small * 2);
     }
   }
 
   @media all and (min-width: 1200px) {
     .photo {
-      width: calc(40% + #{$whitespace-em-small});
-      right: -$whitespace-em-medium;
+      width: calc(40% + #{$whitespace-vw-small * 2});
+      right: -($whitespace-em-small + $whitespace-em-medium);
     }
   }
 
@@ -51,16 +59,16 @@ header.top {
 section.bio {
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 650px) {
   section.bio {
-    width: 65%;
+    width: 50vw;
   }
 }
 
 @media all and (min-width: 1200px) {
   section.bio {
-    width: 55%;
-    margin: 0 2.5em 0;
+    width: 32.5em;
+    margin: 0 ($whitespace-em-medium - $whitespace-em-small)  0;
   }
 }
 
@@ -73,23 +81,32 @@ section.practice {
 
 @media all and (min-width: 1200px) {
   section.practice {
-    padding: inherit $whitespace-em-medium;
+    padding: $whitespace-em-medium;
   }
 }
 
   .practice h2 {
-    font-size: 225%;
+    font-size: 275%;
+
+    @media all and (min-width: 1200px) {
+      padding-left: $whitespace-em-small;
+    }
   }
 
   .practice h3 {
     color: #7B7E81;
+    margin: 1em 0;
   }
 
   .practice .copy {
     overflow: hidden;
+
+    p:first-child {
+      margin-bottom: 1em;
+    }
   }
 
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 650px) {
     .practice .copy p {
       float: left;
       width: 50%;
@@ -100,7 +117,13 @@ section.practice {
 /* Experience section */
 
 section.experience {
-  overflow: hidden;
+
+}
+
+@media all and (min-width: 1200px) {
+  section.experience {
+    margin: 0 $whitespace-em-medium 0;
+  }
 }
 
   .currently {
@@ -110,11 +133,21 @@ section.experience {
   .before {
   }
 
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 650px) {
     .currently,
     .before {
-      float: left;
+      display: inline-block;
       width: 50%;
+    }
+
+    .currently {
+      float: left;
+    }
+  }
+
+  @media all and (min-width: 1200px) {
+    .currently {
+      transform: translateY(-2.5em);
     }
   }
 
