@@ -151,10 +151,14 @@ nav a {
 
 /* Top header */
 header.top {
-  background: url("/images/profile-duo.jpg") center no-repeat #F15A24;
+  background: url("/images/profile-duotone.jpg") center no-repeat #F15A24;
   background-size: cover;
   color: #FFFFFF; }
   @media all and (min-width: 650px) {
+    header.top {
+      background-position: left center;
+      background-size: 120%; } }
+  @media all and (min-width: 840px) {
     header.top {
       background: #F15A24; } }
   @media all and (min-width: 1200px) {
@@ -175,15 +179,12 @@ header.top {
       font-size: 165%; } }
 
 .photo {
-  display: none;
-  position: absolute;
-  width: 30%;
-  max-width: 5em;
-  top: 0;
-  right: -7.5vw; }
-  @media all and (min-width: 650px) {
+  display: none; }
+  @media all and (min-width: 840px) {
     .photo {
       display: block;
+      position: absolute;
+      top: 0;
       width: calc(40% + 5vw);
       max-width: 100%;
       right: -10vw; } }

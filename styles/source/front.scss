@@ -1,13 +1,16 @@
 /* Top header */
 
 header.top {
-  // background: url('/images/profile-mobile.png') right bottom no-repeat $color-orange;
-  // background-size: 45%;
-  background: url('/images/profile-duo.jpg') center no-repeat $color-orange;
+  background: url('/images/profile-duotone.jpg') center no-repeat $color-orange;
   background-size: cover;
   color: $color-white;
 
   @media all and (min-width: 650px) {
+    background-position: left center;
+    background-size: 120%;
+  }
+
+  @media all and (min-width: 840px) {
     background: $color-orange;
   }
 
@@ -35,14 +38,11 @@ header.top {
 
   .photo {
     display: none;
-    position: absolute;
-    width: 30%;
-    max-width: 5em;
-    top: 0;
-    right: -$whitespace-vw-medium;
 
-    @media all and (min-width: 650px) {
+    @media all and (min-width: 840px) {
       display: block;
+      position: absolute;
+      top: 0;
       width: calc(40% + #{$whitespace-vw-small});
       max-width: 100%;
       right: -($whitespace-vw-small * 2);
