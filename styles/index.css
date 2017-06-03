@@ -154,10 +154,6 @@ header.top {
   background: url("/images/profile-duotone.jpg") center no-repeat #F15A24;
   background-size: cover;
   color: #FFFFFF; }
-  @media all and (min-width: 650px) {
-    header.top {
-      background-position: left center;
-      background-size: 120%; } }
   @media all and (min-width: 840px) {
     header.top {
       background: #F15A24; } }
