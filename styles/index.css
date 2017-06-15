@@ -273,6 +273,13 @@ section.experience small {
 footer.bottom {
   background: #3B4E5B;
   color: #FFFFFF; }
+  footer.bottom .social li {
+    margin-right: .5em;
+    display: inline-block; }
+  footer.bottom .icon {
+    width: 1.5em;
+    height: 1.5em;
+    fill: white; }
   @media all and (min-width: 1200px) {
     footer.bottom {
       position: relative;

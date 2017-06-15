@@ -164,8 +164,18 @@ footer.bottom {
   background: $color-petrol;
   color: $color-white;
 
+  .social li {
+    margin-right: .5em;
+    display: inline-block;
+  }
+
+  .icon {
+    width: 1.5em;
+    height: 1.5em;
+    fill: white;
+  }
+
   @media all and (min-width: 1200px) {
-    // transform: translateY(2.5em);
     position: relative;
     bottom: -2.5em;
   }
