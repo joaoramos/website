@@ -163,7 +163,7 @@ header.top {
       position: relative;
       top: -2.5em; } }
 
-.about {
+.headline {
   position: relative; }
 
 .title {
@@ -212,14 +212,14 @@ section.practice {
   font-size: 215%; }
   @media all and (min-width: 1200px) {
     .practice h2 {
-      font-size: 300%;
-      padding: 0 5rem 2.5rem; } }
+      font-size: 250%;
+      padding: 0 15rem 2.5rem 5rem; } }
 
-.practice h3 {
+.practice .description {
   color: #7B7E81;
   margin: 1em 0; }
   @media all and (min-width: 1200px) {
-    .practice h3 {
+    .practice .description {
       font-size: 80%;
       text-align: right;
       margin: 0;
@@ -271,8 +271,21 @@ section.experience small {
 
 /* Bottom footer */
 footer.bottom {
+  overflow: hidden;
   background: #3B4E5B;
   color: #FFFFFF; }
+  @media all and (min-width: 1200px) {
+    footer.bottom {
+      position: relative;
+      bottom: -2.5em; } }
+  @media all and (min-width: 650px) {
+    footer.bottom .copyright {
+      float: left; } }
+  footer.bottom .copyright span {
+    display: block; }
+  @media all and (min-width: 650px) {
+    footer.bottom .social {
+      float: right; } }
   footer.bottom .social li {
     margin-right: .5em;
     display: inline-block; }
@@ -280,7 +293,3 @@ footer.bottom {
     width: 1.5em;
     height: 1.5em;
     fill: white; }
-  @media all and (min-width: 1200px) {
-    footer.bottom {
-      position: relative;
-      bottom: -2.5em; } }

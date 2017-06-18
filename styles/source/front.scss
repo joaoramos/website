@@ -20,7 +20,7 @@ header.top {
   }
 }
 
-  .about {
+  .headline {
     position: relative;
   }
 
@@ -82,12 +82,12 @@ section.practice {
     font-size: 215%;
 
     @media all and (min-width: 1200px) {
-      font-size: 300%;
-      padding: 0 $whitespace-em-small ($whitespace-em-small / 2);
+      font-size: 250%;
+      padding: 0 ($whitespace-em-medium * 2) ($whitespace-em-small / 2) $whitespace-em-small;
     }
   }
 
-  .practice h3 {
+  .practice .description {
     color: #7B7E81;
     margin: 1em 0;
 
@@ -161,8 +161,30 @@ section.experience {
 /* Bottom footer */
 
 footer.bottom {
+  overflow: hidden;
   background: $color-petrol;
   color: $color-white;
+
+  @media all and (min-width: 1200px) {
+    position: relative;
+    bottom: -2.5em;
+  }
+
+  .copyright {
+    @media all and (min-width: 650px) {
+      float: left;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .social {
+    @media all and (min-width: 650px) {
+      float: right;
+    }
+  }
 
   .social li {
     margin-right: .5em;
@@ -173,10 +195,5 @@ footer.bottom {
     width: 1.5em;
     height: 1.5em;
     fill: white;
-  }
-
-  @media all and (min-width: 1200px) {
-    position: relative;
-    bottom: -2.5em;
   }
 }
