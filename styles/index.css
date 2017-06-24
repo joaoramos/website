@@ -276,6 +276,7 @@ footer.bottom {
   color: #FFFFFF; }
   @media all and (min-width: 1200px) {
     footer.bottom {
+      margin: 0 7.5rem 2.5em;
       position: relative;
       bottom: -2.5em; } }
   @media all and (min-width: 650px) {
