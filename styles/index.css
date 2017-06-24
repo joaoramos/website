@@ -75,13 +75,13 @@ th {
 /* Basics */
 body {
   background: #F5F5F5;
-  font-family: 'Merriweather', serif;
+  font-family: 'Noticia Text', serif;
   font-size: calc(16px + (19 - 16) * ((100vw - 420px) / (1200 - 420)));
-  line-height: 1.8;
+  line-height: 1.68;
   color: #373737; }
   @media all and (min-width: 1200px) {
     body {
-      font-size: 17px; } }
+      font-size: 18px; } }
 
 /* Typography */
 h1,
