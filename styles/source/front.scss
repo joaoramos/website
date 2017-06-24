@@ -5,16 +5,12 @@ header.top {
   background-size: cover;
   color: $color-white;
 
-  @media all and (min-width: 650px) {
-  }
-
   @media all and (min-width: 840px) {
     background: $color-orange;
   }
 
   @media all and (min-width: 1200px) {
     margin: 0 $whitespace-em-medium -2.5em;
-    // transform: translateY(-2.5em);
     position: relative;
     top: -2.5em;
   }
@@ -166,6 +162,7 @@ footer.bottom {
   color: $color-white;
 
   @media all and (min-width: 1200px) {
+    margin: 0 $whitespace-em-medium 2.5em;
     position: relative;
     bottom: -2.5em;
   }
