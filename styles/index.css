@@ -97,13 +97,11 @@ em {
   font-style: italic; }
 
 section a {
-  color: #373737;
-  text-decoration: none; }
-  section a:link, section a:visited {
-    border-bottom: 1px solid #E6E6E3; }
+  color: #373737; }
   section a:hover, section a:active, section a:focus {
-    border-bottom: 0;
-    background: #E6E6E3; }
+    color: #FFFFFF;
+    background: #3B4E5B;
+    text-decoration: none; }
 
 /* Main container */
 main {
@@ -290,6 +288,8 @@ footer.bottom {
   @media all and (min-width: 650px) {
     footer.bottom .copyright {
       float: left; } }
+  footer.bottom .copyright a {
+    color: #FFFFFF; }
   footer.bottom .copyright span {
     display: block; }
   @media all and (min-width: 650px) {

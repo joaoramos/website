@@ -50,18 +50,13 @@ em {
 
 section a {
   color: $color-grey-dark;
-  text-decoration: none;
-
-  &:link,
-  &:visited {
-    border-bottom: 1px solid $color-grey-light;
-  }
 
   &:hover,
   &:active,
   &:focus {
-    border-bottom: 0;
-    background: $color-grey-light;
+    color: $color-white;
+    background: $color-petrol;
+    text-decoration: none;
   }
 }
 
