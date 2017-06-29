@@ -1,0 +1,200 @@
+/* Top header */
+
+header.top {
+  background: url('/images/profile-duotone.jpg') center no-repeat $color-orange;
+  background-size: cover;
+  color: $color-white;
+
+  @media all and (min-width: 840px) {
+    background: $color-orange;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin: 0 $whitespace-em-medium -2.5em;
+    position: relative;
+    top: -2.5em;
+  }
+}
+
+  .headline {
+    position: relative;
+  }
+
+  .title {
+    font-size: 150%;
+
+    @media all and (min-width: 650px) {
+      max-width: 11em;
+    }
+
+    @media all and (min-width: 1200px) {
+      font-size: 165%;
+    }
+  }
+
+  .photo {
+    display: none;
+
+    @media all and (min-width: 840px) {
+      display: block;
+      position: absolute;
+      top: 0;
+      width: calc(40% + #{$whitespace-vw-small});
+      max-width: 100%;
+      right: -($whitespace-vw-small * 2);
+    }
+
+    @media all and (min-width: 1200px) {
+      width: calc(40% + #{$whitespace-vw-small * 2});
+      right: -($whitespace-em-small + $whitespace-em-medium);
+    }
+  }
+
+/* Bio section */
+
+section.bio {
+  @media all and (min-width: 1000px) {
+    width: 50vw;
+  }
+
+  @media all and (min-width: 1200px) {
+    width: 32.5em;
+    margin: 0 ($whitespace-em-medium - $whitespace-em-small)  0;
+  }
+}
+
+/* Practice section */
+
+section.practice {
+  background: $color-grey-darker;
+  color: $color-white;
+
+  @media all and (min-width: 1200px) {
+    padding: $whitespace-em-medium;
+  }
+}
+
+  .practice h2 {
+    font-size: 215%;
+
+    @media all and (min-width: 1200px) {
+      font-size: 250%;
+      padding: 0 ($whitespace-em-medium * 2) ($whitespace-em-small / 2) $whitespace-em-small;
+    }
+  }
+
+  .practice .description {
+    color: #7B7E81;
+    margin: 1em 0;
+
+    @media all and (min-width: 1200px) {
+      font-size: 80%;
+      text-align: right;
+      margin: 0;
+      width: 20%;
+      float: left;
+    }
+  }
+
+  .practice .copy {
+    overflow: hidden;
+
+    p {
+      &:first-child { margin-bottom: 1em }
+
+      @media all and (min-width: 650px) {
+        width: 50%;
+        float: left;
+        padding: 0 ($whitespace-em-small / 2) 0 0;
+      }
+
+      @media all and (min-width: 1200px) {
+        width: 40%;
+        padding: 0 0 0 ($whitespace-em-small / 2);
+      }
+    }
+  }
+
+/* Experience section */
+
+section.experience {
+  @media all and (min-width: 1200px) {
+    margin: 0 $whitespace-em-medium 0;
+  }
+
+  small {
+    color: lighten($color-grey-dark, 50);
+  }
+}
+
+.currently {
+  background: $color-grey-light;
+
+  @media all and (min-width: 650px) {
+    display: inline-block;
+    float: left;
+    width: 40%;
+  }
+
+  @media all and (min-width: 1200px) {
+    transform: translateY(-2.5em);
+  }
+}
+
+.before {
+  p::first-letter {
+    line-height: 1em;
+    font-size: 250%;
+    font-style: italic;
+  }
+
+  @media all and (min-width: 650px) {
+    display: inline-block;
+    width: 60%;
+  }
+}
+
+/* Bottom footer */
+
+footer.bottom {
+  overflow: hidden;
+  background: $color-petrol;
+  color: $color-white;
+
+  @media all and (min-width: 1200px) {
+    margin: 0 $whitespace-em-medium 2.5em;
+    position: relative;
+    bottom: -2.5em;
+  }
+
+  .copyright {
+    @media all and (min-width: 650px) {
+      float: left;
+    }
+
+    a {
+      color: $color-white;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .social {
+    @media all and (min-width: 650px) {
+      float: right;
+    }
+  }
+
+  .social li {
+    margin-right: .5em;
+    display: inline-block;
+  }
+
+  .icon {
+    width: 1.5em;
+    height: 1.5em;
+    fill: white;
+  }
+}

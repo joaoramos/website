@@ -1,0 +1,128 @@
+/* Colors */
+
+$color-grey-darker:             #282725;
+$color-grey-dark:               #373737;
+$color-grey-light:              #E6E6E3;
+$color-grey-lighter:            #F5F5F5;
+$color-white:                   #FFFFFF;
+$color-orange:                  #F15A24;
+$color-petrol:                  #3B4E5B;
+
+/* Layout settings */
+
+$main-max-width:                1200px;
+$whitespace-vw-small:           5vw;
+$whitespace-vw-medium:          7.5vw;
+$whitespace-em-tiny:            3.5rem;
+$whitespace-em-small:           5rem;
+$whitespace-em-medium:          7.5rem;
+
+/* Basics */
+
+body {
+  background: $color-grey-lighter;
+  font-family: 'Noticia Text', serif;
+  font-size: calc(16px + (19 - 16) * ((100vw - 420px) / (1200 - 420)));
+  line-height: 1.68;
+  color: $color-grey-dark;
+
+  @media all and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+/* Typography */
+
+h1,
+h2 {
+  font-style: italic;
+  font-family: 'Asap', sans-serif;
+  line-height: 1.3;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+section a {
+  color: $color-grey-dark;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-white;
+    background: $color-petrol;
+    text-decoration: none;
+  }
+}
+
+/* Main container */
+
+main {
+  background: $color-white;
+  max-width: $main-max-width;
+  margin: $whitespace-vw-small;
+  padding: 0;
+
+  @media all and (min-width: 650px) {
+    margin: $whitespace-vw-small;
+    padding: 0 $whitespace-vw-small;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin: $whitespace-vw-medium auto;
+    padding: 0 $whitespace-em-small;
+  }
+}
+
+/* Container wrapper */
+
+.wrapper {
+  padding: $whitespace-vw-medium;
+
+  @media all and (min-width: 1200px) {
+    padding: $whitespace-em-small;
+  }
+}
+
+/* Navigation */
+
+nav,
+small {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+nav {
+  overflow: hidden;
+  margin-bottom: $whitespace-vw-small;
+  color: $color-grey-dark;
+
+  @media all and (min-width: 650px) {
+    margin: $whitespace-em-small 0 ($whitespace-vw-small / 2);
+  }
+}
+
+  nav .given-name {
+    float: left;
+  }
+
+  nav ul {
+    float: right;
+    display: inline-block;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  nav a {
+    color: $color-grey-dark;
+    text-decoration: none;
+  }
