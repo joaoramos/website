@@ -45,8 +45,24 @@ h1 {
 }
 
 em {
-  font-weight: 700;
   font-style: italic;
+}
+
+section a {
+  color: $color-grey-dark;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    border-bottom: 1px solid $color-grey-light;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: 0;
+    background: $color-grey-light;
+  }
 }
 
 /* Main container */
@@ -63,7 +79,7 @@ main {
   }
 
   @media all and (min-width: 1200px) {
-    margin: $whitespace-vw-small auto;
+    margin: $whitespace-vw-medium auto;
     padding: 0 $whitespace-em-small;
   }
 }

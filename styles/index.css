@@ -94,8 +94,16 @@ h1 {
   font-weight: 700; }
 
 em {
-  font-weight: 700;
   font-style: italic; }
+
+section a {
+  color: #373737;
+  text-decoration: none; }
+  section a:link, section a:visited {
+    border-bottom: 1px solid #E6E6E3; }
+  section a:hover, section a:active, section a:focus {
+    border-bottom: 0;
+    background: #E6E6E3; }
 
 /* Main container */
 main {
@@ -109,7 +117,7 @@ main {
       padding: 0 5vw; } }
   @media all and (min-width: 1200px) {
     main {
-      margin: 5vw auto;
+      margin: 7.5vw auto;
       padding: 0 5rem; } }
 
 /* Container wrapper */
