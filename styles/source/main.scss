@@ -21,13 +21,15 @@ $whitespace-em-medium:          7.5rem;
 
 body {
   background: $color-grey-lighter;
-  font-family: 'Noticia Text', serif;
+  font-family: "din-2014", sans-serif;
+  font-weight: 300;
   font-size: calc(16px + (19 - 16) * ((100vw - 420px) / (1200 - 420)));
   line-height: 1.68;
+  letter-spacing: 1px;
   color: $color-grey-dark;
 
   @media all and (min-width: 1200px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -35,28 +37,36 @@ body {
 
 h1,
 h2 {
+  font-family: 'acta-display', sans-serif;
+  font-weight: 800;
   font-style: italic;
-  font-family: 'Asap', sans-serif;
   line-height: 1.3;
 }
 
-h1 {
-  font-weight: 700;
+h2,
+h3,
+h4 {
+  font-weight: inherit;
 }
 
 em {
-  font-style: italic;
+  font-style: normal;
 }
 
-section a {
+section a,
+footer a {
   color: $color-grey-dark;
+  text-decoration: none;
+  border-bottom: 2px solid $color-grey-light;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 1.3;
 
   &:hover,
   &:active,
   &:focus {
-    color: $color-white;
-    background: $color-petrol;
-    text-decoration: none;
+    color: $color-orange;
+    border-bottom-color: $color-orange;
   }
 }
 
@@ -93,7 +103,6 @@ main {
 
 nav,
 small {
-  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-size: 80%;
 }

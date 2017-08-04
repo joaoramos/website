@@ -24,7 +24,7 @@ header.top {
     font-size: 150%;
 
     @media all and (min-width: 650px) {
-      max-width: 11em;
+      max-width: 12.5em;
     }
 
     @media all and (min-width: 1200px) {
@@ -84,11 +84,12 @@ section.practice {
   }
 
   .practice .description {
+    display: inline-block;
     color: #7B7E81;
     margin: 1em 0;
 
     @media all and (min-width: 1200px) {
-      font-size: 80%;
+      font-size: 85%;
       text-align: right;
       margin: 0;
       width: 20%;
@@ -142,11 +143,6 @@ section.experience {
 }
 
 .before {
-  p::first-letter {
-    line-height: 1em;
-    font-size: 250%;
-    font-style: italic;
-  }
 
   @media all and (min-width: 650px) {
     display: inline-block;
@@ -174,6 +170,7 @@ footer.bottom {
 
     a {
       color: $color-white;
+      border-bottom-color: $color-white;
     }
 
     span {
@@ -182,19 +179,26 @@ footer.bottom {
   }
 
   .social {
+    margin: 1em 0;
+
     @media all and (min-width: 650px) {
       float: right;
+      margin: 0;
     }
-  }
 
-  .social li {
-    margin-right: .5em;
-    display: inline-block;
-  }
+    li {
+      margin-right: .5em;
+      display: inline-block;
+    }
 
-  .icon {
-    width: 1.5em;
-    height: 1.5em;
-    fill: white;
+    a {
+      border-bottom: 0;
+    }
+
+    .icon {
+      width: 1.5em;
+      height: 1.5em;
+      fill: white;
+    }
   }
 }
