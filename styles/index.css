@@ -116,6 +116,9 @@ footer a {
     color: #F15A24;
     border-bottom-color: #F15A24; }
 
+section a {
+  display: inline; }
+
 /* Main container */
 main {
   background: #FFFFFF;
