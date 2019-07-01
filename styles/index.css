@@ -98,6 +98,9 @@ h3,
 h4 {
   font-weight: inherit; }
 
+strong {
+  font-weight: 800; }
+
 em {
   font-style: normal; }
 
@@ -290,14 +293,15 @@ section.experience small {
 /* Articles */
 @media all and (min-width: 1200px) {
   section.writing {
-    padding-top: 0; } }
+    padding-top: 0;
+    margin: 0 7.5rem 0; } }
 
 section.writing li {
   margin-top: 1.75rem; }
 
 section.writing a {
   font-family: 'acta-display', sans-serif;
-  font-size: 215%; }
+  font-size: 140%; }
 
 section.writing p {
   margin-top: .5rem; }

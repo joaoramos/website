@@ -156,6 +156,7 @@ section.experience {
 section.writing {
   @media all and (min-width: 1200px) {
     padding-top: 0;
+    margin: 0 $whitespace-em-medium 0;
   }
 
   li {
@@ -164,7 +165,7 @@ section.writing {
 
   a {
     font-family: 'acta-display', sans-serif;
-    font-size: 215%;
+    font-size: 140%;
   }
 
   p {
