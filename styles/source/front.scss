@@ -151,6 +151,31 @@ section.experience {
   }
 }
 
+/* Articles */
+
+section.writing {
+  @media all and (min-width: 1200px) {
+    padding-top: 0;
+  }
+
+  li {
+    margin-top: $whitespace-em-tiny/2;
+  }
+
+  a {
+    font-family: 'acta-display', sans-serif;
+    font-size: 215%;
+  }
+
+  p {
+    margin-top: .5rem;
+  }
+
+  img {
+    width: .8rem;
+  }
+}
+
 /* Bottom footer */
 
 footer.bottom {
@@ -165,7 +190,7 @@ footer.bottom {
   }
 
   .copyright {
-    @media all and (min-width: 650px) {
+    @media all and (min-width: 1200px) {
       float: left;
     }
 
@@ -182,7 +207,7 @@ footer.bottom {
   .social {
     margin: 1em 0;
 
-    @media all and (min-width: 650px) {
+    @media all and (min-width: 1200px) {
       float: right;
       margin: 0;
     }
@@ -194,12 +219,7 @@ footer.bottom {
 
     a {
       border-bottom: 0;
-    }
-
-    .icon {
-      width: 1.5em;
-      height: 1.5em;
-      fill: white;
+      color: $color-white;
     }
   }
 }
