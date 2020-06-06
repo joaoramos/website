@@ -140,13 +140,17 @@ section.main {
     }
   }
 
-.split a, .soon div {
+.split a,
+.work a,
+.soon div {
   font-size: 6.25vw;
   line-height: normal;
 }
 
   @media (min-width: 960px) {
-    .split a, .soon div {
+    .split a,
+    .work a,
+    .soon div {
       font-size: 2.5rem;
     }
   }
@@ -163,13 +167,8 @@ section.main {
   background: var(--color-purple);
   color: var(--color-white);
   padding: var(--spacing-short);
+  margin-bottom: var(--spacing-short);
 }
-
-  @media (min-width: 960px) {
-    .work li:nth-child(1) {
-      grid-column: 1/3;
-    }
-  }
 
 .work .soon {
   opacity: .3;
@@ -199,4 +198,10 @@ section.main {
 
 .writing a {
   text-decoration: none;
+}
+
+.writing img {
+  display: inline-block;
+  width: 1em;
+  margin-right: .3em;
 }
