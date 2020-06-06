@@ -174,7 +174,7 @@ section.main {
 }
 
 .work .soon {
-  opacity: .3;
+  opacity: .4;
 }
 
 .work .soon:hover,
@@ -203,6 +203,6 @@ section.main {
 
 .writing img {
   display: inline-block;
-  width: 1em;
+  width: .8em;
   margin-right: .3em;
 }
