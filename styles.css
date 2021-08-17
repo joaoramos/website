@@ -64,18 +64,18 @@ ol {
 
 /* Layout */
 
-main {
+section {
   padding-left: var(--spacing-page);
   padding-right: var(--spacing-page);
 }
 
-main > * {
+section > * {
   padding-bottom: var(--spacing-l);
 }
 
 /* Wrapper holds columns */
 
-.wrapper{
+.wrapper {
   overflow: hidden;
 }
 
