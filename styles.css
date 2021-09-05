@@ -217,3 +217,22 @@ img.casual {
 .writing .uxcollective::before { background-image: url('images/icons/uxcollective.png') }
 .writing .contentful::before { background-image: url('images/icons/contentful.png') }
 
+footer.wrapper {
+  overflow: hidden;
+  font-size: 80%;
+}
+
+footer img {
+  float: left;
+  display: inline-block;
+  margin-right: var(--spacing-s);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10px;
+  padding-bottom: 0px !important;
+}
+
+footer p {
+  max-width: 510px;
+  opacity: 0.4;
+}
