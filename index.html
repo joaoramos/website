@@ -178,11 +178,14 @@
       </footer>
     </section>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3813449-21"></script>
     <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-3813449-21', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3813449-21');
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
     
 </body>
 </html>
