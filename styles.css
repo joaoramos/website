@@ -164,7 +164,7 @@ img.casual {
 }
 
 .role {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .experience li { position: relative }
@@ -190,9 +190,13 @@ img.casual {
   padding-left: 30px;
 }
 
+.writing em {
+  font-weight: 500;
+}
+
 .writing li a:link,
 .writing li a:visited {
-  /* color: blueviolet; */
+  color: var(--color-dark);
   text-decoration: none;
 }
 
