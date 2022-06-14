@@ -217,6 +217,7 @@ img.casual {
   background-repeat: no-repeat;
 }
 
+.writing .zalando::before { background-image: url('images/icons/zalando.png') }
 .writing .uxplanet::before { background-image: url('images/icons/uxplanet.png') }
 .writing .uxcollective::before { background-image: url('images/icons/uxcollective.png') }
 .writing .contentful::before { background-image: url('images/icons/contentful.png') }
