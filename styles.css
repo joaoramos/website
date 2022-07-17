@@ -180,6 +180,7 @@ img.casual {
   background-repeat: no-repeat;
 }
 
+.experience .zalando::before,
 .experience .contentful::before,
 .experience .sumup::before {
   background-image: url('images/icons/link.svg');
