@@ -1,12 +1,5 @@
-# ME
+Hi there! I'm João Ramos.
 
-João Ramos
-Product designer
+This website was coded in barbones HTML and CSS. It's hosted on GitHub and deployed from Netlify. It uses Umami for analytics, which is self-hosted on Vercel and Supabase.
 
-  Email: hello (at) joao (dot) pt
-  Twitter: @joaotiago
-
-# TECH
-
-  HTML5, CSS3, SVG
-  MINIRESET.CSS
+You can reach me at hello (at) joao (dot) pt.
