@@ -1,5 +1,0 @@
-Hi there! I'm João Ramos.
-
-This website was coded in barbones HTML and CSS. It's hosted on GitHub and deployed from Netlify. It uses Umami for analytics, which is self-hosted on Vercel and Supabase.
-
-You can reach me at hello (at) joao (dot) pt.
