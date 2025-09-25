@@ -4,6 +4,9 @@
 
 :root {
   --color-dirt: #f4f4f2;
+  --color-grey: #D5D5D5;
+  --color-foreground: #EEEBE4;
+  --color-medium: #858585;
   --color-dark: #222222;
   --color-petrol: #004149;
   --spacing-s: 1rem;
@@ -31,19 +34,29 @@
 /* Basics */
 
 body {
-  padding-top: 10vw;
+  padding-top: 6vw;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 154%;
   background: var(--color-dirt);
   color: var(--color-dark);
 }
 
-h1, h2 {
-  font-size: 2rem;
+a:link,
+a:visited {
+  color: var(--color-dark);
+}
+
+a:hover,
+a:active {
+  color: var(--color-petrol);
+}
+
+h1 {
+  font-size: 2.4rem;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 122%;
 }
 
 h1 em {
@@ -52,35 +65,63 @@ h1 em {
 }
 
 .wrapper {
-  max-width: 80rem;
+  position: relative;
+  max-width: 92rem;
   padding-left: var(--spacing-page);
   padding-right: var(--spacing-page);
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
-header {
-  position: relative;
+/* Nav. */
+
+nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-header img {
-  display: block;
-  width: 40vw;
-  margin: 0 auto 2rem;
+.name {
+  display: flex;
+  align-items: center;
 }
 
-section.wrapper {
-  overflow: hidden;
+.name { justify-content: left }
+
+.name img {
+  width: 2rem;
+  margin-right: .5rem;
 }
 
-section.wrapper p {
+/* Header */
+
+header.wrapper {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding-bottom: 4rem; 
+}
+
+section p {
   margin-top: 1rem;
+  line-height: 160%;
+}
+
+section p em { font-style: normal }
+
+section p em > span:nth-child(2) {
+  display: none;
 }
 
 /* Breakpoints */
 
-@media (min-width: 660px) {
+@media (min-width: 760px) {
+  section {
+    margin-top: 4rem;
+    overflow: hidden;
+  }
 
-  section.wrapper p {
+  section p {
     width: 50%;
     float: left;
     padding-left: 0rem;
@@ -88,50 +129,19 @@ section.wrapper p {
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 960px) {
+  
+  header { position: relative }
+
   h1 {
     font-size: 4rem;
-    padding-left: 4rem;
   }
-
-  section.wrapper {
+  
+  section {
     margin-top: 4rem;
   }
 
-  header img {
-    margin: 0;
-    width: 25rem;
-    position: absolute;
-    left: -6.5rem;
-    top: -5rem;
-    z-index: -1;
-    
-  }
-}
-
-@media (min-width: 1100px) {
-
-  header img {
-    width: 30rem;
-  }
-  
-  h1 {
-    font-size: 4rem;
-    padding-left: 4rem;
-  }
-  
-  section.wrapper {
-    margin-top: 4rem;
-  }
-
-  section.wrapper p {
-    padding-left: 2rem;
+  section p {
     padding-right: 2rem;
   }
-}
-
-/* Konami */
-
-body.konami {
-  background: yellow;
 }
