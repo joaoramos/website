@@ -4,6 +4,9 @@
 
 :root {
   --color-dirt: #f4f4f2;
+  --color-grey: #D5D5D5;
+  --color-foreground: #EEEBE4;
+  --color-medium: #858585;
   --color-dark: #222222;
   --color-petrol: #004149;
   --spacing-s: 1rem;
@@ -33,212 +36,89 @@
 body {
   padding-top: 10vw;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 20px;
-  font-size: clamp(100%, 1rem + 2vw, 20px);
+  font-size: 18px;
   font-weight: 400;
   line-height: 154%;
   background: var(--color-dirt);
   color: var(--color-dark);
 }
 
-h1, h2 {
-  font-size: 80px;
-  font-size: clamp(100%, 1rem + 5vw, 80px);
-  font-weight: 600;
-  line-height: 120%;
+a:link,
+a:visited {
+  color: var(--color-dark);
 }
 
-h2, h3, h4, h5, em {
-  display: block;
+a:hover,
+a:active {
+  color: var(--color-petrol);
+}
+
+h1, h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 122%;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h1 em {
   font-weight: 600;
   font-style: normal;
 }
 
-span {
-  display: block;
-}
-
-ol {
-  list-style: none;
-}
-
-/* Layout */
-
-section {
+.wrapper {
+  position: relative;
+  max-width: 92rem;
   padding-left: var(--spacing-page);
   padding-right: var(--spacing-page);
+  margin: 0 auto;
 }
 
-section > * {
-  padding-bottom: var(--spacing-l);
+/* Nav. */
+
+nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-/* Wrapper holds columns */
-
-.wrapper {
-  overflow: hidden;
+.name {
+  display: flex;
+  align-items: center;
 }
 
-@media (min-width: 860px) {
-  .dual > * {
-    width: 50%;
-    float: left;
+.name { justify-content: left }
+
+.name img {
+  width: 5rem;
+  margin-right: .5rem;
+}
+
+/* Header */
+
+header.wrapper {
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+
+.e em {
+  font-style: normal;
+}
+
+.e em > span:nth-child(2) {
+  display: none;
+}
+
+/* Breakpoints */
+
+@media (min-width: 960px) {
+
+  h1 {
+    font-size: 4rem;
   }
 
-  .triad > * {
-    width: 33%;
-    float: left;
+  h2 {
+    line-height: 138%;
   }
-
-  .triad .large {
-    width: 66%;
-    float: left;
-  }
-}
-
-/* Columns have vertical rhythm */
-
-.wrapper > *:not(:last-child),
-.experience li:not(:last-child),
-.profile p:not(:last-child),
-.adplist p:not(:last-child),
-.writing li:not(:last-child) {
-  padding-bottom: var(--spacing-s);
-}
-
-  @media (min-width: 860px) {
-    .wrapper > *:not(:last-child) {
-      padding-bottom: 0;
-    }
-  }
-
-/* Block has top borders */
-
-@media (min-width: 860px) {
-  .block {
-    padding-right: var(--spacing-m);
-  }
-}
-
-.block h3 {
-  border-top: 2px solid var(--color-dark);
-  padding-top: 20px;
-  padding-bottom: var(--spacing-s);
-}
-
-/* Specifics */
-
-.inverted {
-  padding-top: var(--spacing-l);
-  padding-bottom: var(--spacing-s);
-  background: var(--color-petrol);
-  color: var(--color-dirt);
-}
-
-.inverted .large {
-  
-}
-
-.inverted a:link,
-.inverted a:visited {
-  color: var(--color-dirt);
-}
-
-.heading {
-  font-size: 34px;
-  font-size: clamp(100%, 1rem + 2vw, 34px);
-  line-height: 144%;
-}
-
-@media (min-width: 860px) {
-  .heading {
-    width: 66%;
-    padding-right: var(--spacing-s);
-  }
-}
-
-img.casual {
-  display: block;
-  width: 100%;
-  margin-bottom: var(--spacing-l);
-}
-
-.role {
-  font-weight: 500;
-}
-
-.experience li { position: relative }
-
-.experience li::before {
-  content: '';
-  position: absolute;
-  left: -22px;
-  top: 10px;
-  height: 40px;
-  width: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.experience .zalando::before,
-.experience .contentful::before,
-.experience .sumup::before {
-  background-image: url('images/icons/link.svg');
-}
-
-.writing li {
-  position: relative;
-  padding-left: 30px;
-}
-
-.writing em {
-  font-weight: 500;
-}
-
-.writing li a:link,
-.writing li a:visited {
-  color: var(--color-dark);
-  text-decoration: none;
-}
-
-@media (min-width: 860px) {
-  .writing li {
-    left: -30px;
-  }
-}
-
-.writing li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 3px;
-  height: 20px;
-  width: 20px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.writing .zalando::before { background-image: url('images/icons/zalando.png') }
-.writing .uxplanet::before { background-image: url('images/icons/uxplanet.png') }
-.writing .uxcollective::before { background-image: url('images/icons/uxcollective.png') }
-.writing .contentful::before { background-image: url('images/icons/contentful.png') }
-
-footer.wrapper {
-  overflow: hidden;
-  font-size: 80%;
-}
-
-footer img {
-  float: left;
-  display: inline-block;
-  margin-right: var(--spacing-s);
-  width: 4rem;
-  height: 4rem;
-  border-radius: 10px;
-  padding-bottom: 0px !important;
-}
-
-footer p {
-  max-width: 510px;
-  opacity: 0.4;
 }
