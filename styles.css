@@ -53,6 +53,11 @@ a:active {
   color: var(--color-petrol);
 }
 
+*::selection {
+  color: var(--color-dirt);
+  background-color: rgb(197,56,17);
+}
+
 h1 {
   font-size: 2.4rem;
   line-height: 122%;
